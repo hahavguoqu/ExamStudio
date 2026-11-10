@@ -1,0 +1,43 @@
+# Python environments and generated files
+**/.venv/
+**/.uv-cache/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+*.py[cod]
+*.egg-info/
+
+# Credentials and local settings; publish only the empty template
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+key.properties
+credential.bin
+credentials.json
+secrets.json
+
+# User documents, task history, logs and local workspaces
+/data/
+/server/data/
+/logs/
+/work/
+/样例/
+*.log
+*.pid
+
+# Build outputs, Flutter/Android caches and editor settings
+/dist/
+**/build/
+**/.dart_tool/
+**/.gradle/
+**/.kotlin/
+**/ephemeral/
+**/.idea/
+.DS_Store
+Thumbs.db

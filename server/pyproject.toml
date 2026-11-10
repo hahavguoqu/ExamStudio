@@ -1,0 +1,30 @@
+[project]
+name = "shijuan-service"
+version = "0.1.0"
+description = "试卷工作室 API 与文档处理服务"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "python-multipart>=0.0.20",
+  "httpx>=0.28,<1",
+  "pydantic>=2.10,<3",
+  "python-dotenv>=1.0",
+  "python-docx>=1.1,<2",
+  "pymupdf>=1.25,<2",
+  "pillow>=11,<13",
+  "latex2mathml>=3.77",
+  "mathml2omml>=0.0.2",
+  "resvg-py>=0.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=8",
+    "pytest-asyncio>=0.25",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
